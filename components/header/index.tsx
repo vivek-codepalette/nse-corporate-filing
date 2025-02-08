@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { APP_NAME } from "@/constants";
 import { ThemeToggle } from "@/components/theme-toggle";
+import UserButton from "./user-button";
 export default function Header() {
   return (
     <header className="flex justify-between items-center p-4">
@@ -14,6 +15,7 @@ export default function Header() {
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
+        <UserButton />
         <ThemeToggle />
       </nav>
     </header>
