@@ -1,8 +1,10 @@
-import { loginSchema } from "@/lib/validations/user.validations";
-import { z } from "zod";
-
-export type User = z.infer<typeof loginSchema> & {
+export type User = {
   id: string;
+  name: string;
+  email: string;
+  role: string;
+  createdAt: Date;
+  updatedAt: Date;
 };
 
 

@@ -33,6 +33,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         return {
           id: user.id,
+          name: user.name,
           email: user.email,
           role: user.role,
         }
@@ -43,12 +44,21 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     ...authConfig.callbacks,
     async session({ session, token, trigger }) {
       session.user.id = token.sub as string
+      // session.user.role = token.role as string
+      session.user.name = token.name as string
       
       if (trigger === "update") {
         session.user.email = token.email as string
         // session.user.role = token.role
       }
       return session
+    },
+    async jwt({ token, user }) {
+    // async jwt({ token, user, session, trigger }) {
+      if (user) {
+        // token.role = user.role
+      }
+      return token
     },
   },
   pages: {

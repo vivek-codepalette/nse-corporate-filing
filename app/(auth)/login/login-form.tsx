@@ -7,7 +7,7 @@ import { defaultLoginInputs } from "@/constants/defaultInputs"
 import Link from "next/link"
 import { useActionState } from "react"
 import { useFormStatus } from "react-dom"
-import { loginWithCredentials } from "@/lib/actions/user.actions"
+import { loginWithCredentials } from "@/lib/actions/user-auth.actions"
 import { useSearchParams } from "next/navigation"
 
 export default function LoginForm() {

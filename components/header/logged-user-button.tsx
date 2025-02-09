@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu"
-import { logout } from "@/lib/actions/user.actions"
+import { logout } from "@/lib/actions/user-auth.actions"
 
 export default async function UserButton() {
     const session = await auth()

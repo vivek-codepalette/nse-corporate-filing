@@ -15,4 +15,3 @@ export const registerSchema = z.object({
   path: ['confirmPassword'],
   message: 'Passwords do not match',
 });
-
