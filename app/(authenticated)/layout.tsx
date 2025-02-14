@@ -1,21 +1,21 @@
-import DashboardHeader from "@/components/header/dashboard-header";
-import Sidebar from "@/components/sidebar";
-import { SIDEBAR_ITEMS } from "@/constants";
+import { Header } from "@/components/layout/header";
+import { Sidebar } from "@/components/layout/sidebar";
+import { ContentWrapper } from "@/components/layout/content-wrapper";
 
-export default function DashboardLayout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
-    return (
-      <div className="flex flex-col h-screen">
-        <DashboardHeader />
-        <div className="flex flex-row">
-          <Sidebar items={SIDEBAR_ITEMS} />
-          <div className="flex-1">
-            {children}
-          </div>
-        </div>
+export default function AuthenticatedLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <div className="flex">
+        <Sidebar />
+        <main className="flex-1 ml-64 pt-16">
+          <ContentWrapper>{children}</ContentWrapper>
+        </main>
       </div>
-    );
-  }
+    </div>
+  );
+}

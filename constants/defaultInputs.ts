@@ -1,11 +1,11 @@
 export const defaultLoginInputs = {
-  email: "john@doe.com",
-  password: "password",
+  email: "poornima@jd.com",
+  password: "Password@123",
 }
 
 export const defaultRegisterInputs = {
-  name: "John Doe",
-  email: "john@doe.com",
-  password: "password",
-  confirmPassword: "password",
+  name: "Poornima",
+  email: "poornima@jd.com",
+  password: "Password@123",
+  confirmPassword: "Password@123",
 }

@@ -1,12 +1,12 @@
-export const APP_NAME = "Next.js Boilerplate";
+export const APP_NAME = "JD Constructions";
 export const SIDEBAR_ITEMS = [
     {
         label: "Dashboard",
         href: "/dashboard",
     },
     {
-        label: "Users",
-        href: "/dashboard/users",
+        label: "Projects",
+        href: "/dashboard/projects",
     },
 ]
 
@@ -18,5 +18,9 @@ export const ADMIN_SIDEBAR_ITEMS = [
     {
         label: "Users",
         href: "/admin/users",
+    },
+    {
+        label: "Projects",
+        href: "/admin/projects",
     },
 ]
