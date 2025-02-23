@@ -1,13 +1,13 @@
-export const APP_NAME = "JD Constructions";
+export const APP_NAME = "NSE Stock Market";
 export const SIDEBAR_ITEMS = [
     {
-        label: "Dashboard",
-        href: "/dashboard",
+        label: "Stocks",
+        href: "/stocks",
     },
     {
-        label: "Projects",
-        href: "/dashboard/projects",
-    },
+        label: "Favorites",
+        href: "/stocks/favorites",
+    }
 ]
 
 export const ADMIN_SIDEBAR_ITEMS = [
@@ -18,9 +18,5 @@ export const ADMIN_SIDEBAR_ITEMS = [
     {
         label: "Users",
         href: "/admin/users",
-    },
-    {
-        label: "Projects",
-        href: "/admin/projects",
-    },
+    }
 ]

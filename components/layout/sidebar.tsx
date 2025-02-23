@@ -9,6 +9,7 @@ import {
   LayoutDashboard, 
   FolderKanban,
   Users,
+  Star,
 } from "lucide-react";
 
 const adminRoutes = [
@@ -36,9 +37,14 @@ const userRoutes = [
     href: "/dashboard",
   },
   {
-    title: "Projects",
+    title: "Stocks",
     icon: FolderKanban,
-    href: "/dashboard/projects",
+    href: "/stocks",
+  },
+  {
+    title: "Favorites",
+    icon: Star,
+    href: "/stocks/favorites",
   },
 ];
 

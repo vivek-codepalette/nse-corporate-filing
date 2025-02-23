@@ -21,7 +21,6 @@ export default async function UsersPage({
 }) {
     const currentPage = Number((await searchParams).page || 1);
     const { data, total, totalPages } = await getUsers({ page: currentPage });
-
     return (
         <div className="flex flex-col gap-4">
             <h1 className="text-2xl font-bold">Users</h1>
